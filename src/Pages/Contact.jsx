@@ -128,7 +128,7 @@ export const Contact = () => {
 
           <div className="max-w-4xl mx-auto   p-4">
           <p className="text-lg md:text-xl mb-6 ">
-        Please fill the form below to contact us if you have any queries.
+       <span className='text-3xl'>HELLO!</span> Please fill the form below to contact us if you have any queries.
 
         </p>
             <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 " onSubmit={handleSubmit}>

@@ -44,7 +44,7 @@ export const HomePage = () => {
 
     return (
       <>
-      <div className="relative w-full overflow-hidden h-[150px] sm:h-[400px] md:h-[300px] lg:h-[510px]">
+      <div className="relative w-full overflow-hidden h-[145px] sm:h-[400px] md:h-[300px] lg:h-[510px]">
           <Slider {...settings}>
               {slides.map((slide, index) => (
                   <div key={index}>
