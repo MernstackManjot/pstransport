@@ -1,0 +1,41 @@
+.animate {
+    animation: fadeInSlideDown 0.7s forwards, typing 2s steps(18), cursor 0.9s step-end infinite alternate, slideRightToLeft 2s forwards;
+}
+
+@keyframes fadeInSlideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cursor {
+    95% { 
+        opacity: 0; 
+    }
+}
+
+@keyframes slideRightToLeft {
+    0% {
+        transform: translateX(35%); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+
+/* @keyframes typing {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+        right: 0; 
+    }
+} */
+

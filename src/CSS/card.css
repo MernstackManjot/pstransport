@@ -1,0 +1,40 @@
+.cardanimate {
+    animation: 
+        cardfadeInTopDown 0.7s forwards, 
+        cardtyping 2s steps(18) forwards, 
+        cardslidebottomTotop 0.7s forwards, 
+        cardcursor 0.9s step-end infinite alternate;
+}
+
+@keyframes cardfadeInTopDown {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cardcursor {
+    /* Define the cursor animation here if needed */
+}
+
+@keyframes cardslidebottomTotop {
+    0% {
+        transform: translateY(20%); /* Adjust starting position if needed */
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/* @keyframes cardtyping {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100%; 
+    }
+} */
