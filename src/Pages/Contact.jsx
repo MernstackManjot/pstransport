@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 const LabeledInput = ({ type, placeholder, name, value, onChange, error }) => {
   return (
     <label className="block mb-4">
@@ -17,6 +18,8 @@ const LabeledInput = ({ type, placeholder, name, value, onChange, error }) => {
     </label>
   );
 };
+
+// const apikey=process.env.REACT_APP_API_URL;
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -63,7 +66,8 @@ export const Contact = () => {
     }
 
     try {
-      const response = await fetch('https://backenspstransport.onrender.com/contactRouter/contact', {
+      const response = await fetch(import.meta.env.VITE_API_URL, {
+        
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

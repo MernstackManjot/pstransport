@@ -102,7 +102,7 @@ export const DriverRegistration = () => {
                 }
             }
 
-            const response = await axios.post('https://backenspstransport.onrender.com/driveRouter/drive', formDataToSend, {
+            const response = await axios.post(import.meta.env.VITE_DRIVER_URL, formDataToSend, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

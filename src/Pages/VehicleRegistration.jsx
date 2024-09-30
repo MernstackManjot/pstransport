@@ -123,7 +123,7 @@ export const VehicleRegistration = () => {
                 }
             }
     
-            const response = await axios.post('https://backenspstransport.onrender.com/vehicleRouter/vehicle', formDataToSend, {
+            const response = await axios.post(import.meta.env.VITE_VEHICLE_URL, formDataToSend, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
