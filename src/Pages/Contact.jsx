@@ -64,9 +64,9 @@ export const Contact = () => {
     }
 
     try {
-      const apiUrl = import.meta.env.VITE_API_URL; 
-      console.log('API URL:', apiUrl); 
-      const response = await axios.post(apiUrl, formData, {
+      // const apiUrl = import.meta.env.VITE_API_URL; 
+     
+      const response = await axios.post('https://backenspstransport.onrender.com/contactRouter/contact', formData, {
         headers: {
           'Content-Type': 'application/json',
         },
