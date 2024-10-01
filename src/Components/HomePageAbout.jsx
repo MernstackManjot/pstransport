@@ -19,7 +19,7 @@ export const HomePageAbout = () => {
                     <p className="text-sm md:text-lg text-gray-800">
                     We provide reliable and efficient transport services, ensuring your goods reach every corner of the country safely and on time. With a diverse fleet of vehicles, we cater to all your transportation needs, offering customized solutions for every client.
                     </p>
-                   <Link to="/about"> <button className="bg-red-500 w-40 text-white py-3 px-8 mt-5 rounded-lg font-bold transition duration-500 transform hover:bg-red-600 hover:scale-105 active:scale-95">
+                   <Link to="/about"> <button className="bg-red-500 w-40 text-white py-3 px-8 mt-5 rounded-lg font-bold transition duration-500 transform hover:bg-gradient-to-b from-red-400 to-red-600 hover:scale-105 active:scale-95">
                            Read More -
                         </button></Link>
                 </div>

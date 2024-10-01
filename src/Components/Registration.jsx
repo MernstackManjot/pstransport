@@ -86,7 +86,7 @@ const MobileLiClosed =()=>{
                 className="flex items-center cursor-pointer "
                 onClick={handleClick}
             >
-               <div ref={cardRef} className={`text-lg w-full cursor-pointer text-center p-1 whitespace-nowrap border-2 overflow-hidden font-bold  border-red-500 bg-red-500 text-white  rounded-lg flex justify-center items-center ${isVisible ? 'animate' : ''}`}>
+               <div ref={cardRef} className={`text-lg  cursor-pointer text-center p-1 whitespace-nowrap border-2 overflow-hidden font-bold  border-red-500 bg-red-500 text-white  rounded-lg flex justify-center items-center ${isVisible ? 'animate' : ''}`}>
             <div className={``}>Registration</div>
             <div>{isOpen ? (
                     <FaChevronUp className="text-white text-sm" />
@@ -97,7 +97,7 @@ const MobileLiClosed =()=>{
                 
             </div>
             {isOpen && (
-                <ul className="mt-2 mr-20 list-none fixed bg-white z-50 border border-gray-300 rounded-md shadow-lg w-full"
+                <ul className="mt-2 p-1 list-none fixed bg-white z-50 border border-gray-300 rounded-md shadow-lg "
                 onClick={MobileLiClosed}>
                      <Link to="/DriverRegistration">
                         <li className="py-2 px-1 hover:text-red-500 hover:bg-red-100 cursor-pointer transition-colors duration-300">Driver Registration</li>

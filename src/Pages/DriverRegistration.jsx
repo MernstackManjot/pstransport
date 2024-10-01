@@ -109,7 +109,7 @@ export const DriverRegistration = () => {
             });
 
             setResponseMessage(response.data.message);
-            alert('Message sent successfully!');
+            alert('Driver Registration sent successfully!');
             navigate("/")
             setFormData({
                 name: '',
@@ -320,7 +320,7 @@ export const DriverRegistration = () => {
                         </ul>
                     </div>
                     <button
-                         className={`bg-red-500 hover:bg-red-700 w-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline  ${isSubmitting ? 'bg-red-400 cursor-not-allowed' : 'bg-red-500 hover:bg-red-500'} `}
+                         className={`w-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline  ${isSubmitting ? 'bg-red-400 cursor-not-allowed' : 'bg-red-500 hover:bg-red-700'} `}
                         type="submit"
                         disabled={isSubmitting}
                     >
