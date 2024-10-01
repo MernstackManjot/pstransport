@@ -64,7 +64,9 @@ export const Contact = () => {
     }
 
     try {
-      const response = await axios.post(import.meta.env.VITE_API_URL, formData, {
+      const apiUrl = import.meta.env.VITE_API_URL; 
+      console.log('API URL:', apiUrl); 
+      const response = await axios.post(apiUrl, formData, {
         headers: {
           'Content-Type': 'application/json',
         },
